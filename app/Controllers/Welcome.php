@@ -29,12 +29,10 @@ class Welcome extends Controller
      */
     public function index()
     {
-        $data['title'] = $this->language->get('welcome_text');
-        $data['welcome_message'] = $this->language->get('welcome_message');
+        $this->template->assign("title", $this->language->get('welcome_text'));
+        $this->template->assign("welcome_message", $this->language->get('welcome_message'));
 
-        View::renderTemplate('header', $data);
-        View::render('welcome/welcome', $data);
-        View::renderTemplate('footer', $data);
+        $this->template->render("default/index.tpl");
     }
 
     /**

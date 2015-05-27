@@ -43,6 +43,7 @@ if (defined('ENVIRONMENT')) {
     switch (ENVIRONMENT) {
         case 'development':
             error_reporting(E_ALL);
+            ini_set("display_errors", 1);
             break;
         case 'production':
             error_reporting(0);

@@ -1,43 +1,10 @@
+# Fork of Simple MVC Framework
+[https://github.com/simple-mvc-framework/framework][simple-mvc-framework/framework]
+
 ![Simple MVC Framework](http://simplemvcframework.com/app/templates/smvc/img/logo.png)
 
-## Packagist
-
-[![Software License](http://img.shields.io/badge/License-BSD--3-brightgreen.svg?style=flat-square)](LICENSE)
-[![Total Downloads](https://img.shields.io/packagist/dt/simple-mvc-framework/v2.svg?style=flat-square)](https://packagist.org/packages/simple-mvc-framework/v2)
-[![Dependency Status](https://www.versioneye.com/user/projects/554367f738331321e2000005/badge.svg?style=flat)](https://www.versioneye.com/user/projects/554367f738331321e2000005)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/simple-mvc-framework/v2/master/license.txt)
-[![GitHub stars](https://img.shields.io/github/stars/simple-mvc-framework/framework.svg)](https://github.com/simple-mvc-framework/framework/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/simple-mvc-framework/framework.svg)](https://github.com/simple-mvc-framework/framework/network)
-
-The framework is now on packagist [https://packagist.org/packages/simple-mvc-framework/v2](https://packagist.org/packages/simple-mvc-framework/v2)
-
-Install from terminal now by using:
-
-````
-composer create-project simple-mvc-framework/v2 foldername -s dev
-````
-
-The foldername is the desired folder to be created.
-
-#V2.2
-#What is Simple MVC Framework?
-
-Simple MVC Framework is a PHP 5.4 MVC system. It's designed to be lightweight and modular, allowing developers to build better and easy to maintain code with PHP.
-
-The base framework comes with a range of helper classes.
-
-## Documentation
-
-Full docs & tutorials are available at [simplemvcframework.com](http://simplemvcframework.com)
-
-##Requirements
-
- The framework requirements are limited
-
- - Apache Web Server or equivalent with mod rewrite support.
- - PHP 5.4 or greater is required
-
- Although a database is not required, if a database is to be used the system is designed to work with a MySQL database. The framework can be changed to work with another database type.
+## Aim
+Simple MVC Framework with smarty template engine for simple web applications.
 
 ## Installation
 

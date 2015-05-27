@@ -3,6 +3,7 @@ namespace Core;
 
 use Core\View;
 use Core\Language;
+use Core\Template;
 
 /*
  * controller - base controller
@@ -21,6 +22,7 @@ abstract class Controller
      */
     public $view;
     public $language;
+    public $template;
 
     /**
      * on run make an instance of the config class and view class
@@ -32,5 +34,8 @@ abstract class Controller
 
         //initialise the language object
         $this->language = new Language();
+
+        //initialise the template object
+        $this->template = new Template();
     }
 }
