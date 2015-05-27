@@ -40,11 +40,6 @@ class Welcome extends Controller
      */
     public function subPage()
     {
-        $data['title'] = $this->language->get('subpage_text');
-        $data['welcome_message'] = $this->language->get('subpage_message');
-
-        View::renderTemplate('header', $data);
-        View::render('Welcome/SubPage', $data);
-        View::renderTemplate('footer', $data);
+        echo 'do some other cool stuff here';
     }
 }

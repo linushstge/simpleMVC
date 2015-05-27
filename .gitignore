@@ -1,6 +1,6 @@
-app/Core/Config.php
-app/Cache/
-errorlog.html
+/app/Core/Config.php
+/app/Cache/
+/errorlog.html
 
 .idea/
 .DS_Store
