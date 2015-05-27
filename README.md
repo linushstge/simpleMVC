@@ -1,4 +1,4 @@
-# Simple MVC Framework with Smarty Template engine
+# Simple MVC Framework with Smarty
 ![Simple MVC Framework](http://simplemvcframework.com/app/templates/smvc/img/logo.png)
 
 ## Aim

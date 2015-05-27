@@ -9,10 +9,12 @@ class Template
     {
         $this->_smarty = new \Smarty();
 
-        $this->_smarty->setTemplateDir('app/templates');
-        $this->_smarty->setCompileDir('app/Cache/templates_compiled');
-        $this->_smarty->setCacheDir('app/Cache/templates_cached');
-        $this->_smarty->setConfigDir('app/Config');
+        $this->_smarty->setTemplateDir(APP . DIRECTORY_SEPARATOR . TEMPLATE_PATH);
+        $this->_smarty->setCompileDir(APP . '/Cache/templates_compiled');
+        $this->_smarty->setCacheDir(APP . '/Cache/templates_cached');
+        $this->_smarty->setConfigDir(APP . '/Config');
+
+        $this->addPluginDir(APP . '/Modules/Smarty');
     }
 
     public function assign($templateVar, $value)
@@ -23,5 +25,10 @@ class Template
     public function render($template)
     {
         $this->_smarty->display($template);
+    }
+
+    private function addPluginDir($directory)
+    {
+        $this->_smarty->addPluginsDir($directory);
     }
 }
